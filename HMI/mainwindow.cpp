@@ -65,7 +65,6 @@ bool MainWindow::loadHMI(){
     HMI_Widget* baseWidget = new HMI_Widget();
     baseWidget->show();
 
-
     QFile file(path);
     if(file.open(QIODevice::ReadOnly)){
         //json格式
