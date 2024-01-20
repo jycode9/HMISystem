@@ -13,13 +13,21 @@
 #include "HMI_Widget/hmi_button.h"
 #include "HMI_Widget/hmi_widget.h"
 
+#include "TCP_Widget/tcpconfig_widget.h"
+
 #include "mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
 
-    if(loadWidget() == false) return;
+    //if(loadWidget() == false) return;
+
+
+    TCPConfig_Widget* tcpWidget = new TCPConfig_Widget();
+    tcpWidget->show();
+
+
 
 }
 

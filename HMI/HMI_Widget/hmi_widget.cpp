@@ -105,6 +105,5 @@ bool HMI_Widget::convertObjectToJson(QJsonObject& json){
 
     }
 
-
     return true;
 }

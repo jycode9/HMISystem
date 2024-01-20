@@ -1,4 +1,5 @@
-QT       += core gui
+QT += core gui
+QT += serialbus #modbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,6 +23,7 @@ SOURCES += \
     HMI_Widget/hmi_button.cpp \
     HMI_Widget/hmi_object.cpp \
     HMI_Widget/hmi_widget.cpp \
+    TCP_Widget/tcpconfig_widget.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -32,6 +34,7 @@ HEADERS += \
     HMI_Widget/hmi_button.h \
     HMI_Widget/hmi_object.h \
     HMI_Widget/hmi_widget.h \
+    TCP_Widget/tcpconfig_widget.h \
     mainwindow.h
 
 TRANSLATIONS += \
